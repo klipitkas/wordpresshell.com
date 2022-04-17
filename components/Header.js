@@ -2,13 +2,12 @@ import Link from 'next/link';
 
 export default function Header({ name }) {
   return (
-    <header className="pt-20 pb-12">
-      <div className="w-12 h-12 rounded-full block mx-auto mb-4 bg-gradient-conic from-gradient-3 to-gradient-4" />
-      <p className="text-2xl dark:text-white text-center">
-        <Link href="/">
-          <a>{name}</a>
+    <header className="py-20">
+      <h1 className="text-4xl dark:text-white text-center">
+        <Link href="/" passHref>
+          <a className="font-serif">{name}</a>
         </Link>
-      </p>
+      </h1>
     </header>
   );
 }
