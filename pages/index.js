@@ -30,13 +30,11 @@ export default function Index({ posts, globalData }) {
                     {post?.data?.date || ''}
                   </p>
                   <h2 className="font-serif text-2xl md:text-3xl">
-                    {post.data.title}
+                    {post?.data?.title || ''}
                   </h2>
-                  {post.data.description && (
-                    <p className="mt-3 text-lg opacity-60">
-                      {post.data.description}
-                    </p>
-                  )}
+                  <p className="mt-3 text-lg opacity-60">
+                    {post?.data?.description || ''}
+                  </p>
                 </a>
               </Link>
             </li>
